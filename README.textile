@@ -155,6 +155,16 @@ $ open http://localhost:9292/index-fallback.html # to run the localStorage-disab
 
 jQuery Offline also passes JSLint.
 
+h1. TTL and expiraition
+
+This fork of jquery-offline adding TTL to cached values. It using (and require) jStorage.
+
+To enable TTL, define jStorage options (for ex. in document ready), e.g.:
+
+<pre lang="javascript">
+    $.jStorage.options = {TTL: microseconds};
+</pre>
+
 h1. TODO
 
 * -Remember the time that the original content was cached; then provide it to follow-up calls-
